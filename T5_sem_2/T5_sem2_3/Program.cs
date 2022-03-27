@@ -2,8 +2,8 @@
 // Задача 3: Напишите программу,
 // которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 Random rnd = new Random();
-//int value = rnd.Next(1,999);
-int value = 23;
+int value = rnd.Next(1,999);
+//int value = 23;
 Console.WriteLine($"Получено случайное число {value}");   
 string message = value.ToString() ; // получаем string
 int len = message.Length ;
