@@ -19,7 +19,7 @@ Double min = aMassiv.Min(); //находим мин элемент
 Console.WriteLine($"Минимальный элемент =  {min} ");
 
 Double max = aMassiv.Max(); //находим мин элемент
-Console.WriteLine($"Минимальный элемент =  {max} ");
+Console.WriteLine($"Максимальный элемент =  {max} ");
 
 Double result = max - min ;
 Console.WriteLine($"Разница между мах и мин элементами =  {result} ");
