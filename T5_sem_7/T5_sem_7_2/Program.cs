@@ -6,24 +6,19 @@
 // Функция recARAY1 заполняет массив случайными числами и печатает его для проверки.
 void recARAY1 (double[,] array)
 {
-    if (array is null)
-    {
-        throw new ArgumentNullException(nameof(array));
-    }
-
     int m = array.GetLength(0); 
-Console.WriteLine($"Определение размерности массива M[mxn]. m = {m}");
-int n = array.GetLength(1); 
-Console.WriteLine($"Определение размерности массива M[mxn]. n = {n}");
-for (int a = 0; a < m; a++)
-{
-    for (int b = 0; b < n; b++)
+    Console.WriteLine($"Определение размерности массива M[mxn]. m = {m}");
+    int n = array.GetLength(1); 
+    Console.WriteLine($"Определение размерности массива M[mxn]. n = {n}");
+    for (int a = 0; a < m; a++)
     {
-    array[a,b] = new Random().NextDouble() * 100; // NextDouble() дает случайное вещественное число в диапазоне от 0 до 1
-    Console.Write("{0,6:F2}", array[a,b]);
+        for (int b = 0; b < n; b++)
+        {
+        array[a,b] = new Random().NextDouble() * 100; // NextDouble() дает случайное вещественное число в диапазоне от 0 до 1
+        Console.Write("{0,6:F2}", array[a,b]);
+        }
+    Console.WriteLine() ;
     }
-Console.WriteLine() ;
-}
 }
 // Создаем двумерный массив
 Console.WriteLine("Зададим двумерный массив m x n . Введите число m = ") ;
