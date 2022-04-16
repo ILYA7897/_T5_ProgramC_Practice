@@ -49,12 +49,7 @@ for (int i = 0; i < m; i++)
     
 }
 
-//PrintARAY (array) ;
-//Console.WriteLine($"        ");
-
 PrintARAY (arrayS) ;
 Console.WriteLine($"        ");
 
 Console.WriteLine($" END  ");
-
-//Console.WriteLine($" Длина массива суммы строк {arrayS.Length}       ");
